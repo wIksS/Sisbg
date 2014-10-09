@@ -1,0 +1,14 @@
+C:\Users\Виктор\Desktop\Sisbg\Sisbg\Sisbg.Models\bin\Debug\Sisbg.Models.dll
+C:\Users\Виктор\Desktop\Sisbg\Sisbg\Sisbg.Models\bin\Debug\Sisbg.Models.pdb
+C:\Users\Виктор\Desktop\Sisbg\Sisbg\Sisbg.Models\obj\Debug\Sisbg.Models.csprojResolveAssemblyReference.cache
+C:\Users\Виктор\Desktop\Sisbg\Sisbg\Sisbg.Models\obj\Debug\Sisbg.Models.dll
+C:\Users\Виктор\Desktop\Sisbg\Sisbg\Sisbg.Models\obj\Debug\Sisbg.Models.pdb
+C:\Users\Виктор\Desktop\Sisbg\Sisbg\Sisbg.Models\bin\Debug\Sisbg.Models.dll.config
+C:\Users\Виктор\Desktop\Sisbg\Sisbg\Sisbg.Models\bin\Debug\EntityFramework.dll
+C:\Users\Виктор\Desktop\Sisbg\Sisbg\Sisbg.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Виктор\Desktop\Sisbg\Sisbg\Sisbg.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Виктор\Desktop\Sisbg\Sisbg\Sisbg.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Виктор\Desktop\Sisbg\Sisbg\Sisbg.Models\bin\Debug\EntityFramework.xml
+C:\Users\Виктор\Desktop\Sisbg\Sisbg\Sisbg.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Виктор\Desktop\Sisbg\Sisbg\Sisbg.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Виктор\Desktop\Sisbg\Sisbg\Sisbg.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml

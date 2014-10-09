@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sisbg", "Sisbg\Sisbg.csproj", "{A814C4B4-8AB1-4B64-9868-011B058D6D05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sisbg.Data", "Sisbg.Data\Sisbg.Data.csproj", "{FFB360A8-E6AE-44AD-AC87-F3E450E242A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sisbg.Models", "Sisbg.Models\Sisbg.Models.csproj", "{FC58BDC0-CA59-4A17-A94B-B3EE6CB63B4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A814C4B4-8AB1-4B64-9868-011B058D6D05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A814C4B4-8AB1-4B64-9868-011B058D6D05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A814C4B4-8AB1-4B64-9868-011B058D6D05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A814C4B4-8AB1-4B64-9868-011B058D6D05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFB360A8-E6AE-44AD-AC87-F3E450E242A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFB360A8-E6AE-44AD-AC87-F3E450E242A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFB360A8-E6AE-44AD-AC87-F3E450E242A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFB360A8-E6AE-44AD-AC87-F3E450E242A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC58BDC0-CA59-4A17-A94B-B3EE6CB63B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC58BDC0-CA59-4A17-A94B-B3EE6CB63B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC58BDC0-CA59-4A17-A94B-B3EE6CB63B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC58BDC0-CA59-4A17-A94B-B3EE6CB63B4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
