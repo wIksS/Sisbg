@@ -26,5 +26,12 @@ namespace Sisbg.Controllers
 
             return View();
         }
+
+        public ActionResult Product()
+        {
+            ViewBag.Product = "Moqt produkt baby";
+
+            return View();
+        }
     }
 }

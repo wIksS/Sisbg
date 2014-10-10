@@ -57,3 +57,10 @@ C:\Users\Виктор\Desktop\Sisbg\Sisbg\Sisbg\bin\Sisbg.Data.dll
 C:\Users\Виктор\Desktop\Sisbg\Sisbg\Sisbg\bin\Sisbg.Models.dll
 C:\Users\Виктор\Desktop\Sisbg\Sisbg\Sisbg\bin\Sisbg.Data.pdb
 C:\Users\Виктор\Desktop\Sisbg\Sisbg\Sisbg\bin\Sisbg.Models.pdb
+C:\Users\Виктор\Desktop\Sisbg\Sisbg\Sisbg\bin\Ninject.dll
+C:\Users\Виктор\Desktop\Sisbg\Sisbg\Sisbg\bin\Ninject.Web.Common.dll
+C:\Users\Виктор\Desktop\Sisbg\Sisbg\Sisbg\bin\Ninject.Web.Mvc.dll
+C:\Users\Виктор\Desktop\Sisbg\Sisbg\Sisbg\bin\WebActivatorEx.dll
+C:\Users\Виктор\Desktop\Sisbg\Sisbg\Sisbg\bin\Ninject.xml
+C:\Users\Виктор\Desktop\Sisbg\Sisbg\Sisbg\bin\Ninject.Web.Common.xml
+C:\Users\Виктор\Desktop\Sisbg\Sisbg\Sisbg\bin\Ninject.Web.Mvc.xml

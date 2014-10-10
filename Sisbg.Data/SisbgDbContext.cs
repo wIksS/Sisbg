@@ -18,13 +18,15 @@ namespace Sisbg.Data
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<SisbgDbContext, Configuration>());
         }
 
-        IDbSet<Product> Products { get; set; }
+        public IDbSet<Product> Products { get; set; }
 
-        IDbSet<ApplicationUser> Users { get; set; }
+        public IDbSet<ApplicationUser> Users { get; set; }
 
         public static SisbgDbContext Create()
         {
             return new SisbgDbContext();
         }
+
+       // public System.Data.Entity.DbSet<Sisbg.Models.Product> Products { get; set; }
     }
 }

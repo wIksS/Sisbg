@@ -22,3 +22,8 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.create-product{
+    margin:50px 20%;
+    
+}
