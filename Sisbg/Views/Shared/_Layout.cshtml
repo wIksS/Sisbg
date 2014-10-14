@@ -33,13 +33,14 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
+        <footer class="navbar-fixed-bottom text-center">
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/index")
     @RenderSection("scripts", required: false)
 </body>
 </html>

@@ -53,6 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationUser.cs" />
+    <Compile Include="Category.cs" />
+    <Compile Include="File.cs" />
+    <Compile Include="Length.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

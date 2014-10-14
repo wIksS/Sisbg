@@ -31,6 +31,21 @@ namespace Sisbg.Data
             get { return this.GetRepository<Product>(); }
         }
 
+        public IRepository<File> Files
+        {
+            get { return this.GetRepository<File>(); }
+        }
+
+        public IRepository<Length> Lengths
+        {
+            get { return this.GetRepository<Length>(); }
+        }
+
+        public IRepository<Category> Categories
+        {
+            get { return this.GetRepository<Category>(); }
+        }
+
         public IRepository<ApplicationUser> Users
         {
             get { return this.GetRepository<ApplicationUser>(); }

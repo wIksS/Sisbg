@@ -8,17 +8,16 @@ using System.Web;
 using System.Web.Mvc;
 using Sisbg.Data;
 using Sisbg.Models;
-
+using System.IO;
 namespace Sisbg.Controllers
 {
-    [Authorize]
     public class ProductsController : BaseController
     {
         public ProductsController(ISisbgData data)
-            :base(data)
+            : base(data)
         {
-        }
 
+        }
         // GET: Products
         public ActionResult Index()
         {
@@ -47,14 +46,58 @@ namespace Sisbg.Controllers
         }
 
         // POST: Products/Create
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,Description")] Product product)
+        public ActionResult Create([Bind(Include = "Id,Name,BriefDescription,Description,JobDescription")] Product product,
+            [Bind(Include = "Code,Weight,Pallet,Length")] Length[] lengths,IEnumerable<HttpPostedFileBase> files)
         {
             if (ModelState.IsValid)
-            {               
+            {
                 data.Products.Add(product);
                 data.Products.SaveChanges();
+
+                for (int i = 0; i < lengths.Length; i++)
+                {
+                    lengths[i].Product = product;
+                    product.Lengths.Add(lengths[i]);
+                    data.Lengths.Add(lengths[i]);
+                }
+
+                if (Request.Files.Count > 0)
+                {
+                    for (int i = 0; i < Request.Files.Count; i++)
+                    {
+                        var file = Request.Files[i];
+
+                        if (file != null && file.ContentLength > 0)
+                        {
+                            var fileName = Path.GetFileName(file.FileName);
+                            var virtualPath = "~/Images/" + product.Name;
+                            var path = Path.Combine(Server.MapPath(virtualPath), fileName);
+                            bool exists = System.IO.Directory.Exists(virtualPath);
+
+                            if (!exists)
+                            {
+                                System.IO.Directory.CreateDirectory(Server.MapPath(virtualPath));
+                            }
+
+                            file.SaveAs(path);
+                            Sisbg.Models.File newFile = new Sisbg.Models.File();
+                            newFile.Path = path;
+                            newFile.Product = product;
+                            newFile.ProductId = product.Id;
+                            data.Files.Add(newFile);
+
+                            product.Images.Add(newFile);
+                        }
+                    }
+                }
+
+                data.Files.SaveChanges();
+                data.Products.SaveChanges();
+                data.Lengths.SaveChanges();
                 return RedirectToAction("Index");
             }
 
@@ -81,7 +124,7 @@ namespace Sisbg.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name,Description")] Product product)
+        public ActionResult Edit([Bind(Include = "Id,Name,BriefDescription,Description,JobDescription")] Product product)
         {
             if (ModelState.IsValid)
             {

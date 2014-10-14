@@ -11,7 +11,12 @@ namespace Sisbg.Data
     {
         IRepository<Product> Products { get; }
 
-        IRepository<ApplicationUser> Users { get; }        
+        IRepository<ApplicationUser> Users { get; }
 
+        IRepository<File> Files { get; }
+
+        IRepository<Category> Categories { get; }
+
+        IRepository<Length> Lengths { get; }
     }
 }
