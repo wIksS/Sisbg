@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Module for DOM</title>
+    <script src="Scripts/DomModule.js"></script>
+</head>
+<body>
+    <div id="test"></div>
+    <script>
+        //test for buffer
+        var a = document.createElement('div');
+        for (var i = 0; i < 101; i++) {
+            a.innerHTML = i + '';
+            domModule.appendToBuffer('#test' , a.cloneNode(true));
+        }
+    </script>
+</body>
+</html>
